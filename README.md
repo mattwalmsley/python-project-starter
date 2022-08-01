@@ -23,7 +23,7 @@ Linux:
     python3 -m venv .venv
 
 <br>
-Windows/Mac (probably):
+Windows/Mac:
 
     python -m venv .venv
 
@@ -35,14 +35,12 @@ Activate virtual environment:
     source .venv/bin/activate
 
 <br>
-Settings for settings.json in .vscode
+Settings for <em>settings.json</em> in <em>.vscode</em>
 
     {
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python3",
     "python.envFile": "${workspaceFolder}/.venv"
     }
-
-Ctrl + Shift + P
 
 <br>
 Install required packages for venv from file:
