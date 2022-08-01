@@ -48,6 +48,6 @@ Install required packages for venv from file:
     pip install -r requirements.txt
 
 <br>
-Write/updates required packages for venv to requirements file:
+Write/update required packages for venv to requirements file:
 
     pip freeze > requirements.txt
