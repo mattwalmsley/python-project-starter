@@ -11,6 +11,9 @@ Navigate to a local folder and run:
     git clone git@github.com:mattwalmsley/citi-hackathon-2022.git
 
 ## Set-Up Python Virtual Environment
+- [Using the command line](https://docs.python.org/3/using/cmdline)
+- [venv](https://docs.python.org/3/library/venv.html)
+- [Visual Studio Code Python Environments](https://code.visualstudio.com/docs/python/environments)
 
 Create virtual environment with venv module (run this in citi-hackathon-2022 directory)
 
@@ -24,8 +27,7 @@ Windows/Mac (probably):
 
     python -m venv .venv
 
-- [Using the command line](https://docs.python.org/3/using/cmdline)
-- [venv](https://docs.python.org/3/library/venv.html)
+
 
 <br>
 Activate virtual environment:
@@ -33,12 +35,14 @@ Activate virtual environment:
     source .venv/bin/activate
 
 <br>
-Setting for settings.json in .vscode
+Settings for settings.json in .vscode
 
     {
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python3",
     "python.envFile": "${workspaceFolder}/.venv"
     }
+
+Ctrl + Shift + P
 
 <br>
 Install required packages for venv from file:
