@@ -51,3 +51,9 @@ Install required packages for venv from file:
 Write/updates required packages for venv to requirements file:
 
     pip freeze > requirements.txt
+
+
+## Django
+Create <em>.env</em> in <em>citi-hackathon-2022/backend</em> with the following:
+
+    SECRET_KEY=<<<YOUR_SECRET_KEY>>>
