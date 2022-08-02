@@ -1,6 +1,8 @@
 # citi-hackathon-2022
 Team C set-up guide. Edit as appropriate.
 
+https://github.com/jonathankytang/hackathon/tree/main/data
+
 ## Download Python and Git
 - [Python](https://www.python.org/downloads/)
 - [Git](https://github.com/git-guides/install-git)
