@@ -8,9 +8,11 @@ from rest_framework import viewsets
 
 # import the InternSerializer from the serializer file
 from .serializers import InternSerializer
+from .serializers import BuddySerializer
 
 # import the Intern model from the models file
 from .models import Intern
+from .models import Buddy
 
 fields = [
         "id",
@@ -36,6 +38,21 @@ class InternView(viewsets.ModelViewSet):
     # define a variable and populate it
     # with the Intern list objects
     queryset = Intern.objects.all()
+
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = fields
+    ordering_fields = fields
+
+
+class BuddyView(viewsets.ModelViewSet):
+
+    # create a serializer class and
+    # assign it to the IntenSerializer class
+    serializer_class = BuddySerializer
+
+    # define a variable and populate it
+    # with the Intern list objects
+    queryset = Buddy.objects.all()
 
     filter_backends = [DjangoFilterBackend]
     filterset_fields = fields
