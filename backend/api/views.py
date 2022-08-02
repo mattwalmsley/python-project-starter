@@ -7,35 +7,29 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import viewsets
 
 # import the InternSerializer from the serializer file
-from .serializers import InternSerializer
+from .serializers import AnalyseMatchesSerializer
 
 # import the Intern model from the models file
-from .models import Intern
+from .models import AnalyseMatches
 
 fields = [
         "id",
         "name",
-        "university",
-        "course",
-        "LoB",
-        "location",
-        "interest1",
-        "interest2",
-        "interest3",
-        "programming1",
-        "programming2",
-    ]
+        "preference1",
+        "preference2",
+        "preference3"
+]
 
 # create a class for the Intern model viewsets
-class InternView(viewsets.ModelViewSet):
+class AnalyseMatchesView(viewsets.ModelViewSet):
 
     # create a serializer class and
     # assign it to the IntenSerializer class
-    serializer_class = InternSerializer
+    serializer_class = AnalyseMatchesSerializer
 
     # define a variable and populate it
     # with the Intern list objects
-    queryset = Intern.objects.all()
+    queryset = AnalyseMatches.objects.all()
 
     filter_backends = [DjangoFilterBackend]
     filterset_fields = fields

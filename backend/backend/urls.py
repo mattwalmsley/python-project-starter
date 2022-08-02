@@ -27,7 +27,7 @@ from rest_framework import routers
 router = routers.DefaultRouter()
 
 # register the router
-router.register(r"interns", views.InternView, "intern")
+router.register(r"analyseMatches", views.AnalyseMatchesView, "analyseMatches")
 
 urlpatterns = [
     path("admin/", admin.site.urls),

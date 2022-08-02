@@ -2,25 +2,12 @@
 from rest_framework import serializers
 
 # import the todo data model
-from .models import Intern
+from .models import AnalyseMatches
 
 # create a serializer class
-class InternSerializer(serializers.ModelSerializer):
+class AnalyseMatchesSerializer(serializers.ModelSerializer):
 
     # create a meta class
     class Meta:
-        model = Intern
-        fields = (
-            'id',
-            'name',
-            'university',
-            'course',
-            'LoB',
-            'location',
-            'interest1',
-            'interest2',
-            'interest3',
-            'programming1',
-            'programming2',
-            'request_time'
-        )
+        model = AnalyseMatches
+        fields = ("id", "name", "preference1", "preference2", "preference3")
