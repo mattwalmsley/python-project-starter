@@ -28,6 +28,7 @@ router = routers.DefaultRouter()
 
 # register the router
 router.register(r"analyseMatches", views.AnalyseMatchesView, "analyseMatches")
+router.register(r"results", views.ResultModelView, "results")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
