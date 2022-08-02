@@ -10,3 +10,13 @@ class AnalyseMatches(models.Model):
     def __str__(self):
 
         return self.name
+
+class ResultModel(models.Model):
+    internName = models.CharField(max_length=150)
+    buddy1 = models.CharField(max_length=150)
+    buddy2 = models.CharField(max_length=150)
+    buddy3 = models.CharField(max_length=150)
+
+    def __str__(self):
+
+        return self.name
