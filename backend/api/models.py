@@ -12,7 +12,7 @@ class Intern(models.Model):
     interest3 = models.CharField(max_length=150)
     programming1 = models.CharField(max_length=150)
     programming2 = models.CharField(max_length=150)
-    request_time = models.FloatField
+    request_time = models.CharField(max_length=150)
 
     def __str__(self):
 
