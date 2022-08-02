@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django_filters.rest_framework import DjangoFilterBackend
 
 # Create your views here.
 
@@ -11,6 +12,20 @@ from .serializers import InternSerializer
 # import the Intern model from the models file
 from .models import Intern
 
+fields = [
+        "id",
+        "name",
+        "university",
+        "course",
+        "LoB",
+        "location",
+        "interest1",
+        "interest2",
+        "interest3",
+        "programming1",
+        "programming2",
+    ]
+
 # create a class for the Intern model viewsets
 class InternView(viewsets.ModelViewSet):
 
@@ -21,3 +36,7 @@ class InternView(viewsets.ModelViewSet):
     # define a variable and populate it
     # with the Intern list objects
     queryset = Intern.objects.all()
+
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = fields
+    ordering_fields = fields
