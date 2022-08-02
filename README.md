@@ -3,6 +3,8 @@ Team C set-up guide. Edit as appropriate.
 
 https://github.com/jonathankytang/hackathon/tree/main/data
 
+https://www.geeksforgeeks.org/integrating-django-with-reactjs-using-django-rest-framework/
+
 ## Download Python and Git
 - [Python](https://www.python.org/downloads/)
 - [Git](https://github.com/git-guides/install-git)
