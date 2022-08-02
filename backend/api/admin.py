@@ -16,8 +16,8 @@ class InternAdmin(admin.ModelAdmin):
         "interest1",
         "interest2",
         "interest3",
-        "programming 1",
-        "programming 2",
+        "programming1",
+        "programming2",
         "request_time"
     )
 
