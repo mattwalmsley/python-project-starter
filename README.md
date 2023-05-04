@@ -1,5 +1,5 @@
-# citi-hackathon-2022
-Team C set-up guide. Edit as appropriate.
+# python-project-start
+Set-up guide. Edit as appropriate.
 
 ## Download Python and Git
 - [Python](https://www.python.org/downloads/)
@@ -8,14 +8,14 @@ Team C set-up guide. Edit as appropriate.
 ## Clone the GitHub repo
 Navigate to a local folder and run:
 
-    git clone git@github.com:mattwalmsley/citi-hackathon-2022.git
+    git clone git@github.com:mattwalmsley/python-project-starter.git
 
 ## Set-Up Python Virtual Environment
 - [Using the command line](https://docs.python.org/3/using/cmdline)
 - [venv](https://docs.python.org/3/library/venv.html)
 - [Visual Studio Code Python Environments](https://code.visualstudio.com/docs/python/environments)
 
-Create virtual environment with venv module (run this in citi-hackathon-2022 directory)
+Create virtual environment with venv module (run this in python-project-starter directory)
 
 <br>
 Linux:
